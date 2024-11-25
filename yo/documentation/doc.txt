@@ -1,0 +1,13 @@
+﻿DATABSE
+
+user_table:
+	user_id
+	user_name
+	chat_id
+	friends (id в таблице friends)
+friends_table:
+	id (id связи юзера и его друга)
+	user_id
+	friend_id(user_id друга)
+
+

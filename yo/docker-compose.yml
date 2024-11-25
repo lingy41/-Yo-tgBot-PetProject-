@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      - POSTGRES_PASSWORD=psql123
+      - POSTGRES_USER=postgres
+      - PGDATA=/home/lingy/psql_DB/db
+    ports:
+      - 54321:5432
